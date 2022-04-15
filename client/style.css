@@ -58,3 +58,14 @@ input {
 h2 {
   color: rgb(63, 63, 63);
 }
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.flexbox1 {
+  display: flex;
+  margin: 10px;
+  /* flex-direction: column; */
+  /* justify-content: flex-start; */
+}

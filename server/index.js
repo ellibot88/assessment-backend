@@ -58,12 +58,12 @@ app.put("/api/fortune", (req, res) => {
 });
 
 app.delete("/api/fortune", (req, res) => {
-  const deletedFortune = fortunes.splice(fortunes.length - 1, 1);
   if (fortunes.length === 0) {
     res
       .status(200)
       .send("There are no fortunes to delete! Try adding some instead!");
   } else {
+    const deletedFortune = fortunes.splice(fortunes.length - 1, 1);
     res
       .status(200)
       .send(`You deleted the following fortune: ${deletedFortune}`);
